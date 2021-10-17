@@ -1,3 +1,9 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+_imagecrop_bundle:
+  resource: "@ImageCropBundle/Resources/config/routing.yml"
+
+_liip_imagine:
+  resource: "@LiipImagineBundle/Resources/config/routing.yaml"

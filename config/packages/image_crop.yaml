@@ -1,0 +1,7 @@
+image_crop:
+    window: popup
+    
+    mappings:
+        App\Entity\UploadableDemo:
+            filters:
+                - post_image

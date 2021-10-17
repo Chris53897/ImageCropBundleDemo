@@ -1,20 +1,31 @@
 {
+    "name": "chris53897/imagecrop-bundle-demo",
     "type": "project",
-    "license": "proprietary",
+    "description": "Image Crop for Symfony applications (DEMO)",
+    "keywords": ["image", "crop"],
+    "homepage": "https://github.com/anacona16/ImageCropBundle",
+    "license": "MIT",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=8.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/doctrine-bundle": "^2.4",
+        "doctrine/orm": "^2.10",
         "symfony/console": "5.3.*",
         "symfony/dotenv": "5.3.*",
-        "symfony/flex": "^1.3.1",
+        "symfony/flex": "^1.17",
         "symfony/framework-bundle": "5.3.*",
         "symfony/runtime": "5.3.*",
-        "symfony/yaml": "5.3.*"
+        "symfony/yaml": "5.3.*",
+        "sensio/framework-extra-bundle": "^5.6",
+        "anacona16/imagecrop-bundle": "dev-feature/modernize",
+        "liip/imagine-bundle": "^2.6",
+        "vich/uploader-bundle": "dev-master"
     },
     "require-dev": {
+        "symfony/web-profiler-bundle": "^5.3"
     },
     "config": {
         "optimize-autoloader": true,
@@ -58,5 +69,11 @@
             "allow-contrib": false,
             "require": "5.3.*"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Chris53897/ImageCropBundle"
+        }
+    ]
 }
