@@ -1,9 +1,13 @@
 Demo App für Symfony Bundle ImageCrop
 =========
 
+Demo for [ImageCropBundle](https://github.com/anacona16/ImageCropBundle)
+
+<img src="doc/images/image_crop.png" width="50%" alt="ImageCrop" title="ImageCrop" />
+
 ## Install
 
-    git clone Chris53897/ImageCropBundleDemo
+    git clone git@github.com:Chris53897/ImageCropBundleDemo.git
     cd ImageCropBundleDemo
     php bin/console d:s:c
 
