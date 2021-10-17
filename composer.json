@@ -3,7 +3,7 @@
     "type": "project",
     "description": "Image Crop for Symfony applications (DEMO)",
     "keywords": ["image", "crop"],
-    "homepage": "https://github.com/anacona16/ImageCropBundle",
+    "homepage": "https://github.com/Chris53897/ImageCropBundleDemo",
     "license": "MIT",
     "minimum-stability": "stable",
     "prefer-stable": true,

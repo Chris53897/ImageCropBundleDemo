@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chris53897/ImageCropBundle.git",
-                "reference": "e6c2551cea1bf528c9d782d65d206664fb27b0bb"
+                "reference": "2c8102260cfa272f7ed221ca2e905f94c368a1f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chris53897/ImageCropBundle/zipball/e6c2551cea1bf528c9d782d65d206664fb27b0bb",
-                "reference": "e6c2551cea1bf528c9d782d65d206664fb27b0bb",
+                "url": "https://api.github.com/repos/Chris53897/ImageCropBundle/zipball/2c8102260cfa272f7ed221ca2e905f94c368a1f1",
+                "reference": "2c8102260cfa272f7ed221ca2e905f94c368a1f1",
                 "shasum": ""
             },
             "require": {
@@ -70,7 +70,7 @@
             "support": {
                 "source": "https://github.com/Chris53897/ImageCropBundle/tree/feature/modernize"
             },
-            "time": "2021-10-17T09:09:44+00:00"
+            "time": "2021-10-17T18:07:00+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
