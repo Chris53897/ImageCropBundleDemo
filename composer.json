@@ -19,7 +19,7 @@
         "symfony/framework-bundle": "5.3.*",
         "symfony/runtime": "5.3.*",
         "symfony/yaml": "5.3.*",
-        "sensio/framework-extra-bundle": "^5.6",
+        "sensio/framework-extra-bundle": "^6.2",
         "anacona16/imagecrop-bundle": "dev-feature/modernize",
         "liip/imagine-bundle": "^2.6",
         "vich/uploader-bundle": "dev-master"

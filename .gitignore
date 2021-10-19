@@ -10,5 +10,6 @@
 ###< symfony/framework-bundle ###
 
 .idea
-/public/images/*
+/public/images/products/*
+!/public/images/products/symfony-black-02-616f067cd73d5465451698.png
 /public/media/

@@ -9,7 +9,6 @@ Demo for [ImageCropBundle](https://github.com/anacona16/ImageCropBundle)
 
     git clone git@github.com:Chris53897/ImageCropBundleDemo.git
     cd ImageCropBundleDemo
-    php bin/console d:s:c
 
 ## Start Server 
 
@@ -17,8 +16,9 @@ Demo for [ImageCropBundle](https://github.com/anacona16/ImageCropBundle)
 
 ## Run example
 
-Create an Object and edit it
+    https://127.0.0.1:8000
+
+## Create a new entity
 
     https://127.0.0.1:8000/new
-    https://127.0.0.1:8000/1
-    
+    https://127.0.0.1:8000/2

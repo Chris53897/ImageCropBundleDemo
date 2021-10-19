@@ -11,9 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends AbstractController
 {
-    /**
-     * @Route("/new", name="new")
-     */
+    #[Route(path: "/new", name: "new")]
     public function new(Request $request): Response
     {
         $uploadableDemo = new UploadableDemo();
@@ -37,11 +35,14 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="index")
+     * Route("/{id}", name="index")
      *
      * The "id" of the UploadableDemo is passed in and then turned into a UploadableDemo object
      * automatically by the ParamConverter.
      */
+    ##[Route(path: "/{id}", name: "index", defaults: ['id' => 1])]
+    #[Route(path: "/{id}", name: "index", requirements: ['id' => "\d+"], defaults: ['id' => 1])]
+    ##[Route(path: "/{id}", name: "index")]
     public function index(UploadableDemo $uploadableDemo): Response
     {
         $form = $this->createForm(UploadableDemoType::class, $uploadableDemo);
@@ -51,6 +52,4 @@ class DefaultController extends AbstractController
             'form' => $form,
         ]);
     }
-
-
 }

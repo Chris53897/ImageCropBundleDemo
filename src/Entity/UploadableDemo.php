@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use App\Repository\UploadableDemoRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\File\File;
@@ -14,7 +16,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
  * ORM\Entity
  * @Vich\Uploadable
  */
-#[ORM\Entity]
+#[ORM\Entity(repositoryClass: UploadableDemoRepository::class)]
 ##[Vich\Uploadable]
 class UploadableDemo
 {
@@ -31,13 +33,13 @@ class UploadableDemo
     ##[Vich\UploadableField(mapping: 'product_image', fileNameProperty: 'imageName', size: 'imageSize')]
     private ?File $imageFile = null;
 
-    #[ORM\Column(type: 'string')]
+    #[ORM\Column(type: Types::STRING)]
     private ?string $imageName = null;
 
-    #[ORM\Column(type: 'integer')]
+    #[ORM\Column(type: Types::INTEGER)]
     private ?int $imageSize = null;
 
-    #[ORM\Column(type: 'datetime')]
+    #[ORM\Column(type: Types::DATE_MUTABLE)]
     private ?\DateTimeInterface $updatedAt = null;
 
 
